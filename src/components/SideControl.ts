@@ -21,8 +21,7 @@ export class SideControl implements IControl {
     button.type = 'button';
     button.title = this.label;
     button.setAttribute('aria-label', this.label);
-    button.innerHTML = `<img src="${this.url}" width="24" aria-hidden="true">`;
-
+    button.innerHTML = `<p style="font-size:16px;">&#9660;</p>`;
     button.addEventListener('click', this.openNav);
 
     const container = document.createElement('div');
